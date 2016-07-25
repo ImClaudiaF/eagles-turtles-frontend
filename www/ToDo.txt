@@ -1,0 +1,12 @@
+
+Segunda pantalla de inicio con la imagen con otro fondo y los botons de login y register
+
+
+***Nav bar con opciones, habilitadas segun el localstorage
+	Registro
+	Inicio de sesion
+	Cerrar sesion
+
+En perfil:
+	Crear ruta
+	Mostrar historial

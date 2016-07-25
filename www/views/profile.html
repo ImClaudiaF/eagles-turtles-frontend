@@ -1,0 +1,12 @@
+<div class="panel-body">
+    <div ng-controller="profileController" ng-init="profileInfo()">
+        <button type="button" class="btn btn-success btn-xs" ng-click="logout()" style="float: right">Log Out!</button>
+        <div class="panel panel-success">
+            <div class="panel-body">
+                <h3>{{name + ' ' + lastname}}</h4>
+                <h4>{{username}}</h3>
+            </div>
+        </div>
+        <button type="button" class="btn btn-success btn-default btn-block"><h6>Add Route!</h6></button>
+    </div>
+</div>

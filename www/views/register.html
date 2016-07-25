@@ -1,0 +1,54 @@
+<div class="panel-body">
+    <div ng-controller="registerController" class="container">
+        <div class="panel panel-success">
+            <div class="panel-body">
+            <legend>Register!</legend>
+                <form class="form-horizontal" name="registerF">
+                    <fieldset>
+                    	<div class="form-group">
+                            <label for="inputName" class="col-lg-2 control-label">Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputName" placeholder="Name" ng-model="name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputLastname" class="col-lg-2 control-label">Lastname</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputLastname" placeholder="Lastname" ng-model="lastname" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" ng-model="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputUsername" class="col-lg-2 control-label">Username</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputUsername" placeholder="Username" ng-model="username" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password" ng-model="password" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button type="submit" class="btn btn-success" ng-disabled="registerF.$invalid" ng-click="register()">Sign Up!</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!-- <div ng-if="status == 200">
+            <div class="alert alert-info" role="alert">Successfully registered!</div>
+        </div>
+        <div ng-if="status == 201">
+            <div class="alert alert-info" role="alert">Username and/or email already registered!</div>
+        </div> -->
+    </div>
+</div>
