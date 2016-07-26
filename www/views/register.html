@@ -2,10 +2,10 @@
     <div ng-controller="registerController" class="container">
         <div class="panel panel-success">
             <div class="panel-body">
-            <legend>Register!</legend>
+                <legend>Register!</legend>
                 <form class="form-horizontal" name="registerF">
                     <fieldset>
-                    	<div class="form-group">
+                        <div class="form-group">
                             <label for="inputName" class="col-lg-2 control-label">Name</label>
                             <div class="col-lg-10">
                                 <input type="text" class="form-control" id="inputName" placeholder="Name" ng-model="name" required>
@@ -37,7 +37,9 @@
                         </div>
                         <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-2">
-                                <button type="submit" class="btn btn-success" ng-disabled="registerF.$invalid" ng-click="register()">Sign Up!</button>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-success" ng-disabled="registerF.$invalid" ng-click="register()">Sign Up!</button>
+                                </div>
                             </div>
                         </div>
                     </fieldset>

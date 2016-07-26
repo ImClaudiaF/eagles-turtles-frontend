@@ -1,8 +1,8 @@
 app.controller('welcomeController', function($sce, $scope, $state){
 	$scope.welcome = function() {
-		$scope.source = $sce.trustAsResourceUrl("../Eat.jpg");
+		$scope.source = $sce.trustAsResourceUrl("../Eat3.jpg");
 		setTimeout(function(){ 
-			$state.transitionTo('home'); 
-		}, 3000);
+			$state.transitionTo('header.home'); 
+		}, 500);
 	}
 });

@@ -2,7 +2,7 @@
     <div ng-controller="loginController" class="container" ng-init="init()">
         <div class="panel panel-success">
             <div class="panel-body">
-            <legend>Log In!</legend>
+                <legend>Log In!</legend>
                 <form class="form-horizontal" name="registerF">
                     <fieldset>
                         <div class="form-group">
@@ -19,7 +19,9 @@
                         </div>
                         <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-2">
-                                <button type="submit" class="btn btn-success"  ng-click="login()">Sign Up!</button>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-success" ng-disabled="registerF.$invalid" ng-click="login()">Sign Up!</button>
+                                </div>
                             </div>
                         </div>
                     </fieldset>

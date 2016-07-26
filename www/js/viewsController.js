@@ -5,22 +5,26 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/welcome.html',
             controller: 'welcomeController'
         })
-        .state('home', {
-            url: '/home',
+        .state('header', {
+            url: '/header',
+            templateUrl: 'views/header.html',
+        })
+        .state('header.home', {
+            url: '/header',
             templateUrl: 'views/home.html',
             controller: 'homeController'
         })
-        .state('home.register', {
+        .state('header.register', {
             url: '/register',
             templateUrl: 'views/register.html',
             controller: 'registerController'
         })
-        .state('home.login', {
+        .state('header.login', {
             url: '/login',
             templateUrl: 'views/login.html',
             controller: 'loginController'
         })
-        .state('home.profile', {
+        .state('header.profile', {
             url: '/profile',
             templateUrl: 'views/profile.html',
             controller: 'profileController'
